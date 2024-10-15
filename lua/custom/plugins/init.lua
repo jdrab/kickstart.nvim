@@ -2,4 +2,9 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  'navarasu/onedark.nvim',
+  --      'ThePrimeagen/harpoon',
+  'https://gitlab.com/code-stats/code-stats-vim.git',
+  'wakatime/vim-wakatime',
+}
