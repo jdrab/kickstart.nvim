@@ -603,9 +603,13 @@ require('lazy').setup({
         -- clangd = {},
         gopls = {},
         -- pyright = {},
-        -- rust_analyzer = {},
+        rust_analyzer = {},
         -- intelephense = {},
-        phpantom_lsp = {},
+        phpantom_lsp = {
+          cmd = { 'phpantom_lsp' },
+          filetypes = { 'php' },
+          root_markers = { '.phpantom.toml', '.git', 'composer.json' },
+        },
         -- phpactor = {},
         --
         -- Some languages (like typescript) have entire language plugins that can be useful:
