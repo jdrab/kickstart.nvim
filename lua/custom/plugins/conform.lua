@@ -2,7 +2,7 @@ return {
   'stevearc/conform.nvim',
   opts = function(_, opts)
     opts.formatters = opts.formatters or {}
-
+    opts.formatters_by_ft.php = { 'php_cs_fixer', 'mago', stop_after_first = true }
     -- Define php-cs-fixer with a condition to check if it exists
     opts.formatters.php_cs_fixer = {
       command = 'vendor/bin/php-cs-fixer',
